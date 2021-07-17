@@ -1,0 +1,420 @@
+
+
+<!-- @author cipher -->
+<!-- @date 2020/5/5 -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head> 
+        <meta charset="utf-8" />
+        <meta name="author" content="cipher" />
+        <meta name="description" content="Website from cipher" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="Index/src/images/cipehrpowered.ico" />
+
+        <link rel="author" href="mailto:cipherpowered@gmail.com" />
+        <link rel="author" type="text/html" href="http://blog.cipherpowered.com" />
+
+        <!-- bootstrap@4.4.1 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- https://animate.style/ -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+        <link rel="stylesheet" type="text/css" href="Index/css/index.css" />
+        <link rel="stylesheet" type="text/css" href="Index/css/font.css" />
+        <link rel="stylesheet" type="text/css" href="Index/css/content.css" />
+        <link rel="stylesheet" type="text/css" href="Index/css/cover.css" />
+        <link rel="stylesheet" type="text/css" href="Index/plugin/MagicCube/css/MagicCube.css" /> 
+        
+        <style>
+            .bd-placeholder-img {
+              font-size: 1.125rem;
+              text-anchor: middle;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+      
+            @media (min-width: 768px) {
+              .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+              }
+            }
+        </style>
+
+        <!-- 前置脚本 -->
+        <script src="Index/plugin/MagicCube/js/MagicCube.js"></script>
+    </head>
+
+    <body onload="setWidthHeight()" onresize="setWidthHeight()">
+        <!-- 封面 -->
+        <div id="cover" class="cover animate__animated animate__zoomInLeft">
+
+            <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                <header class="masthead mb-auto">
+                    <div class="inner">
+                        <h3 class="masthead-brand">CIPHER' Blog</h3>
+                        <nav class="nav nav-masthead justify-content-center">
+                            <a id="home-button" class="nav-link active" href="#">Home</a>
+                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">Contact</a>
+                        </nav>
+                    </div>
+                </header>
+        
+                <!-- 封面内容 -->
+                <main role="main" class="inner cover">
+                    <h1 class="cover-heading">LOVE MY GIRL</h1>
+                    <!-- 封面描述 -->
+                    <p id="cover-describe" class="lead">
+                        I miss you, baby.
+                    </p>
+                    <p class="lead">
+                        <a href="#" class="btn btn-lg btn-secondary" onclick="setCoverDescribe()">Onclick PIG</a>
+                    </p>
+        
+                    <div class="col-xs-3 col-lg-2">
+                        <!-- 爱情魔方 -->
+                        <div id="mc-1" class="MagicCube">
+                            <div class="box-page top"></div>
+                            <div class="box-page right"></div>
+                            <div class="box-page bottom"></div>
+                            <div class="box-page left"></div>
+                            <div class="box-page front"></div>
+                            <div class="box-page behind"></div>
+                        </div>
+                        <script type="text/JavaScript">
+                            var magicCubeNameById = "#mc-1";
+                            magicCube(magicCubeNameById);
+                        </script>
+                    </div>
+        
+                </main>
+        
+                <footer class="mastfoot mt-auto">
+                    <div class="inner">
+                        <p>Cover template for <a href="http://blog.cipherpowered.com/">CIPHERPOWERED</a>, by <a
+                                href="http://blog.cipherpowered.com/">@Cipher</a>.</p>
+                    </div>
+                </footer>
+            </div>
+        
+        </div>
+
+        <div id="home" class="container animate__animated">
+
+            <div class="row">
+
+                <!-- 灯泡 -->
+                <div id="component-1" class="col-3 col-lg-2 animate__animated animate__zoomInLeft">
+                    ​<picture>
+                        <img src="Index/src/images/bulb.gif" class="img-fluid" alt="bulb">
+                    </picture>
+                </div>
+
+                <!-- 博客名 -->
+                <div id="component-2" class="col-9 col-lg-4 animate__animated animate__bounceInUp">
+                    <div class="name">
+                        <p>
+                            CIPHER' Blog
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 插件 -->
+                <div id="component-3" class="col-3 col-lg-2 animate__animated animate__bounceInDown" style="position: relative;">
+                    <!-- 爱情魔方 -->
+                    <div id="mc-2" class="MagicCube" style="position: absolute; bottom: 30px;">
+                        <div class="box-page top"></div>
+                        <div class="box-page right"></div>
+                        <div class="box-page bottom"></div>
+                        <div class="box-page left"></div>
+                        <div class="box-page front"></div>
+                        <div class="box-page behind"></div>
+                    </div>
+                    <script type="text/JavaScript">
+                        var magicCubeNameById = "#mc-2";
+                        magicCube(magicCubeNameById);
+                    </script>
+                </div>
+
+                <!-- 李信 -->
+                <div id="component-4" class="col-3 col-lg-2 animate__animated animate__bounceInDown">
+                    ​<picture>
+                        <img src="Index/src/images/lixin.png" class="img-fluid" alt="lixin">
+                            <p style="position: absolute; bottom: 5%; width: 100%; height: 24px; margin: 0px; text-align: center; font-family: msyh, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">我就菜怎么啦</p>
+                    </picture>
+                </div>
+
+                <!-- 小飞机 -->
+                <div id="component-5" class="col-3 col-lg-2 animate__animated animate__zoomInRight">
+                    ​<picture>
+                        <img src="Index/src/images/plane.png" class="img-fluid" alt="plane">
+                    </picture>
+                </div>
+
+            </div>
+            
+            <div id="btm" class="row">
+
+                <div class="col-sm-8 rounded-sm">
+
+                    <nav class="cover-nav cover-bg-success navbar navbar-expand-lg navbar-light border rounded-lg animate__animated animate__rotateInUpLeft">
+
+                        <!-- 导航条 -->
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><button type="button" class="btn btn-light">HOME</button><span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><button type="button" class="btn btn-light">NEWS</button></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="javascript:;"><button type="button" id="back-cover" class="btn btn-light">COVER</button></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </nav>
+                    
+                    <!-- 内容 -->
+                    <div class="content border rounded-lg animate__animated animate__slideInRight">
+                        <div class="article-top">
+                            <h3 class="text-center">
+                                颠覆整个世界，只为摆正她的身影
+                            </h3 class="text-center">
+                            <h4 class="text-center">
+                                <small>
+                                    于无知的命运中执着追寻心中的归宿，让熊熊的烈火燃烧吾之野望
+                                </small>
+                            </h4>
+                        
+                            <br />
+                        
+                            <p class="text-center">
+                                今日的星辰辉映太古的源起<br />
+                        
+                                过往的注视指引明日的生死<br />
+                        
+                                羌笛吹落梅让人分不清异乡和故里<br />
+                        
+                                讨厌看到他们离我而去因为是战友吗<br />
+                        
+                                长城之上是千亿的星空星空之上是不灭的守望<br />
+                        
+                                没有疆土的王和落魄的野兽差不了多少<br />
+                        
+                                我是跟野兽差不了多少<br />
+                        
+                                可这 终究是我的国土<br />
+                        
+                                这里是为我所统率的战场<br />
+                        
+                                这里是让我忘却野性的战场<br />
+                        
+                                何处是吾乡<br />
+                        
+                                孤独是双刃的锋芒<br />
+                        
+                                崩刃的剑依旧致命 锈蚀的盾屹立如初<br />
+                        
+                                渴望靠近篝火又恐惧被温暖灼伤<br />
+                        
+                                恐怕需要九倍的破坏力才能实现独一的执着<br />
+                        
+                                没有欲望和执念 也无需背负欲望和执念 真好<br />
+                        
+                                世上是否存在典籍 告诉我如何跟自我和解<br />
+                        
+                                双面的刃伤人又伤己<br />
+                        
+                                死亡是当英雄的前提<br />
+                        
+                                他人是地狱 再无法信任他人是轮回的地狱<br />
+                        
+                                能提起沉重剑刃的手 握不住飞舞飘落的花<br />
+                        
+                                一无所有 至少能肆意如风<br />
+                        
+                                预言无用 不知道结局的人生才会刺激<br />
+                        
+                                只有在梦里才会做梦<br />
+                        
+                                失败之前 对面不会有想太多的时间<br />
+                        
+                                屠魔的少年终究成魔存活最后的魔做了救世主<br />
+                        
+                                讨厌看到他们离我而去 因为是战友吗<br />
+                        
+                                单纯为不想死而挥剑<br />
+                        
+                                唯有燃烧在长城的篝火 让我放下野望<br />
+                        
+                                血肉之躯燃烧一次足矣<br />
+                        
+                                这里是让我忘却野性的战场<br />
+                        
+                                人间不值得<br />
+                        
+                                啊<br />
+                            </p>
+                    
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4 rounded-sm">
+
+                    <!-- 音频 -->
+                    <div class="audio animate__animated animate__rotateIn">
+                        <audio controls="controls" autoplay="autoplay" loop="loop">
+                            <source src="Index/src/audios/lixin-dialogue.mp3" type="audio/mpeg" />
+                                Your browser does not support the audio element.
+                        </audio>
+                    </div>
+
+                    <!-- 最新文章 -->
+                    <div class="list-group animate__animated animate__fadeInRight">
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-success">最新文章</a>
+
+                        <a href="#" class="cover-list-group-item list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+                        <a href="#" class="cover-list-group-item list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+                        <a href="#" class="cover-list-group-item list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+                        <a href="#" class="cover-list-group-item list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+                        <a href="#" class="cover-list-group-item cover-list-group-item-bottom list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+                    </div>
+
+                    <!-- 分类专栏 -->
+                    <div id="classification" class="list-group animate__animated animate__fadeInRightBig">
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-success">分类专栏</a>
+
+                        
+                        <a href="#" class="cover-list-group-item list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+                        <a href="#" class="cover-list-group-item list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+                        <a href="#" class="cover-list-group-item list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+                        <a href="#" class="cover-list-group-item list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+                        <a href="#" class="cover-list-group-item cover-list-group-item-bottom list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
+                    </div>
+
+                    <!-- 归档 -->
+                    <div class="list-group animate__animated animate__fadeInRight">
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-success">归档</a>
+                        
+                        <a href="#" class="cover-list-group-item list-group-item list-group-item-action list-group-item-light d-flex justify-content-between align-items-center">
+                            2020/5
+                            <span class="badge badge-primary badge-pill">0</span>
+                        </a>
+                        <a href="#" class="cover-list-group-item list-group-item list-group-item-action list-group-item-light d-flex justify-content-between align-items-center">
+                            2020/6
+                            <span class="badge badge-primary badge-pill">0</span>
+                        </a>
+                        <a href="#" class="cover-list-group-item list-group-item list-group-item-action list-group-item-light d-flex justify-content-between align-items-center">
+                            2020/7
+                            <span class="badge badge-primary badge-pill">0</span>
+                        </a>
+                    </div>
+                    
+                    <!-- 页脚 -->
+                    <div class="list-group animate__animated animate__fadeInBottomRight">
+                        <li class="list-group-item list-group-item-action list-group-item-light">
+
+                            <div class="row">
+                            
+                                <!-- 联系 -->
+                                <div class=".col-xl-6 col-sm-12">
+                                
+                                    <div class="contact">
+                                        <picture>
+                                            <img src="Index/src/images/QQ.png" class="img-fluid" alt="QQ">
+                                        </picture>
+                                        <p>2050103247</p>
+                                    </div>
+                                </div>
+
+                                <div class=".col-xl-6 col-sm-12">
+                                    <div class="contact">
+                                        <picture>
+                                            <img src="Index/src/images/mail.png" class="img-fluid" alt="mail">
+                                        </picture>
+                                        <p>
+                                            cipherpowered@gmail.com
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class=".col-xl-6 col-sm-12">
+                                    <div class="contact">
+                                        <picture>
+                                            <img src="Index/src/images/wechat.png" class="img-fluid" alt="wechat">
+                                        </picture>
+                                        <p>、</p>
+                                    </div>
+                                </div>
+
+                                <div class=".col-xl-6 col-sm-12">
+                                    <div class="contact">
+                                        <picture>
+                                            <img src="Index/src/images/phone.png" class="img-fluid" alt="phone">
+                                        </picture>
+                                        <p>+86 13788175983</p>
+                                    </div>
+                                </div>
+
+                                <!-- 分割线 -->
+                                <hr style="width: 80%; margin-left: auto; margin-right: auto;"/>
+
+                                <div class=".col-xl-6 col-sm-12">
+                                    <div class="copyright">
+                                        <p>Copyright&copy;2020-2020&nbsp;Cipher</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 返回顶部 跳转菜单等 -->
+        <div class="skip">
+            <ul>
+                <!-- 返回顶部 -->
+                <li>
+                    <a id="backtop" href="javascript:;">
+                        <img src="Index/src/images/backtop.png" alt="backtop" width=42 height=42 />
+                    </a>
+                </li>
+
+                <!-- 跳转至分类专栏 -->
+                <!-- <li>
+                    <a id="classification" href="javascript:;">
+                        <img src="Index/src/images/classification.png" alt="classification" width=42 height=42 />
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        
+        <script src="Index/js/index.js"></script>
+        <script src="Index/js/cover.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,119 @@
+
+
+/*
+ * 基本结构
+ */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #333;
+}
+
+body {
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.name {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.name p {
+    position: absolute;
+    margin: 10% auto;
+    padding: 0px;
+    font-size: 40px;
+    color: rgb(0, 195, 255);
+    text-shadow: 5px 5px 5px rgb(61, 88, 97);
+}
+
+.cover-nav {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.cover-bg-success {
+    background-color: #C3E6CB;
+}
+
+.cover-list-group-item {
+    border-top: 0;
+    border-bottom: 0;
+}
+.cover-list-group-item-bottom {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+/* 音频 */
+audio {
+    width: 100%;
+}
+
+.aside-top {
+    margin-top: 10px;
+}
+
+/* 联系 */
+.contact {
+    margin: 12px;
+}
+.contact picture, .contact img {
+    float: left;
+    height: 24px;
+}
+.contact p {
+    padding-left: 32px;
+    word-break: break-all;
+}
+
+/* 版权 */
+.copyright {
+    text-align: center;
+}
+
+/* 返回顶部 跳转菜单等 */
+.skip {
+    position: fixed;
+    left: 200px;
+    bottom: 0px;
+}
+#backtop {
+    display: none;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}

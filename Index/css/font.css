@@ -1,0 +1,10 @@
+
+
+/**
+ * 自定义字体集
+*/
+@font-face {
+    font-family: msyh;
+    src: 
+        url("../src/fonts/chinese.msyh.ttf");
+}
